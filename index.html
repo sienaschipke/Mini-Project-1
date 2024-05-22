@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -18,17 +19,26 @@
     <main>
         <h1>My New Website</h1>
         <img src="./assets/image-1.png" alt="placeholder image">
-        <p>
+        <p class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Expedita dolor atque est corrupti quod fugiat aspernatur eaque 
-            facilis et doloribus! Ea cum nisi et amet! Non aliquid ipsum 
-            voluptas eaque.
         </p>
     </main>
     <footer>
         <h2>Contact Me</h2>
-        <form action=""></form>
-        <p><span>&copy;</span>2023 My New Website Productions</p>
+        <form action="">
+            <div id="name-entry">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div id="email-entry">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div id="submit-button">
+                <input type="submit" value="SEND">
+            </div>
+        </form>
+        <p class="copyright"><span>&copy;</span>2023 My New Website Productions</p>
     </footer>
 </body>
 </html>
