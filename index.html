@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>My New Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li>Github</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>My New Website</h1>
-        <img src="./assets/image-1.png" alt="placeholder image">
-        <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
+        <section id="bio">
+            <div class="container">
+                <h1>My New Website</h1>
+                <img src="./assets/image-1.png" alt="placeholder image">
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container form-box">
+                <h2>Contact Me</h2>
+                <form action="">
+                    <div id="name-entry">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" placeholder="John Doe" />
+                    </div>
+                    <div id="email-entry">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" placeholder="johndoe@gmail.com"/>
+                    </div>
+                    <div id="submit-button">
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-        <h2>Contact Me</h2>
-        <form action="">
-            <div id="name-entry">
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name" />
-            </div>
-            <div id="email-entry">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" />
-            </div>
-            <div id="submit-button">
-                <input type="submit" value="SEND">
-            </div>
-        </form>
         <p class="copyright"><span>&copy;</span>2023 My New Website Productions</p>
     </footer>
 </body>
